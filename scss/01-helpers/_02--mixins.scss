@@ -1,0 +1,47 @@
+@mixin section-mixin {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  font-size: 18px;
+  line-height: 27px;
+  margin: auto;
+
+  .section__header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 44px;
+  }
+
+  .section__header__h2 {
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .section__header__h2--span {
+    color: $color-accent;
+  }
+
+  .section__header__p {
+    width: 90%;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+@mixin section-mixin-queries {
+  @media screen and (min-width: 680px) and (max-width: 872px) {
+    .section__header__p {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  @media screen and (min-width: 873px) and (max-width: 3000px) {
+    .section__header__p {
+      width: 70%;
+      max-width: 733px;
+    }
+  }
+}
